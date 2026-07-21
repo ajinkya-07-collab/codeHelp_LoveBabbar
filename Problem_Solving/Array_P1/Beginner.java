@@ -90,6 +90,16 @@ public class Beginner {
         System.out.println("Count of Ones : " + onesCount);
     }
 
+    // first unsorted element
+    public static int getFirstUnsortedElement(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i + 1] <= arr[i]) {
+                return arr[i + 1];
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3, 4, 5 };
@@ -111,6 +121,9 @@ public class Beginner {
 
         int[] zeroOnes = { 1, 0, 1, 1, 1, 0, 0, 1 };
         getCount(zeroOnes);
+
+        int unsortedElement = getFirstUnsortedElement(arr1);
+        System.out.println("First Unsorted Element : " + unsortedElement);
 
     }
 
