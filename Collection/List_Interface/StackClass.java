@@ -2,7 +2,7 @@ package Collection.List_Interface;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
+//import java.util.Stack;
 
 public class StackClass {
 

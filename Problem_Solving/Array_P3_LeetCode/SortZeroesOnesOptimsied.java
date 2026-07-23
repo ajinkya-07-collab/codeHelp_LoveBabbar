@@ -1,4 +1,4 @@
-package Problem_Solving.Array_P3;
+package Problem_Solving.Array_P3_LeetCode;
 
 public class SortZeroesOnesOptimsied {
 

@@ -1,4 +1,4 @@
-package Problem_Solving.Array_P4;
+package Problem_Solving.Array_P4_LeetCode;
 
 import java.util.ArrayList;
 import java.util.Collections;

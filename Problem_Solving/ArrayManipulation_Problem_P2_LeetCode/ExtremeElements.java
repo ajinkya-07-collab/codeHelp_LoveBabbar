@@ -1,4 +1,4 @@
-package Problem_Solving.ArrayManipulation_Problem_P2;
+package Problem_Solving.ArrayManipulation_Problem_P2_LeetCode;
 
 public class ExtremeElements {
 
