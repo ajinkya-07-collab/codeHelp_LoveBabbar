@@ -7,7 +7,7 @@ public class RemoveDuplicates_SortedArray {
     static int getUniqueElements(int[] nums) {
 
         int i = 0; // position & count of unique element
-        int j = 0;
+        int j = 1; // traverse & searches for new elements
 
         int n = nums.length;
 
