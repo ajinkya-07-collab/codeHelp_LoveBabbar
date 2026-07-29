@@ -1,8 +1,10 @@
 package Problem_Solving.Array_P4_LeetCode;
 
+import java.util.HashSet;
+
 public class FindMissingElements_BF {
 
-    // O(n) -> complexity
+    // O(n*n) -> complexity
 
     static int[] getMissingElements(int[] arr) {
         int n = arr.length;
@@ -19,6 +21,35 @@ public class FindMissingElements_BF {
 
             }
             if (!found) {
+                missing[index++] = i;
+            }
+        }
+        return missing;
+    }
+
+    static int[] getMissingElementsOptimised(int[] arr) {
+
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int num : arr) {
+            set.add(num);
+        }
+
+        int count = 0;
+
+        // count missing element
+
+        for (int i = 1; i <= arr.length; i++) {
+            if (!set.contains(i)) {
+                count++;
+            }
+        }
+
+        int[] missing = new int[count];
+        int index = 0;
+
+        for (int i = 1; i <= arr.length; i++) {
+            if (!set.contains(i)) {
                 missing[index++] = i;
             }
         }
